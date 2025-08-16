@@ -1,0 +1,26 @@
+<html>
+
+<body>
+    <input type="text" id="num" placeholder="Enter number">
+    <br>
+    <button onclick="getCube()">Get Cube</button>
+
+    <div id="result"></div>
+
+    <script>
+        function getCube() {
+            x = document.getElementById("num").value
+            output = `Cube of ${x} is ${x * x * x}`
+            document.getElementById("result").innerHTML = output
+            
+            cnt = 0
+            color = ["red", "green", "blue", "yellow"]
+            setInterval(() => {
+                document.getElementById("body").style.backgroundColor = color[cnt++]
+                if (cnt == 3) cnt = 0
+            }, 1000)
+        }
+    </script>
+</body>
+
+</html>

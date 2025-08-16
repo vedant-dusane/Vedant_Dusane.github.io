@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title> Sumit Is God</title>
+    <script language="javascript">
+        function check() {
+            var answer = document.form.T1.value.toLowerCase();
+            if (answer == "yes")
+                !alert("Valid")
+            else
+                !alert("Not Valid")
+        }
+    </script>
+</head>
+
+<body align="center">
+    </ol>
+    <marquee bgcolor="red" direction="left" size="50" text="black"> Sumit Is God</marquee>
+    <table border="5" align="center">
+
+        <tr>
+            <th colspan="2">
+                Reasons For Sumit To Be God
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Ek month ata nahi
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Toh bhi pass hota hai
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ek kafi kadak idol hai uski
+            </td>
+        </tr>
+    </table>
+    <br>I suport Sumit The God<br>
+    <form name="form">
+        <input type="text" name="T1" placeholder="Yes or No"><br>
+        <input type="button" value="Submit" onClick="check()">
+    </form>
+</body>
+<script language="javascript">
+    /* num = prompt("Enter number")
+    * for (i = 1, j = 10; i <= 10, j > 0; i++, j--) {
+      *  console.log(`${num}*${i}=${num * i}\t ${num}*${j}=${num * j}`);
+}*/
+
+    const randomNumber = Math.floor(Math.random() * 11);
+    for (i = 0; i <= 10; i++) {
+        num = prompt("Enter Number");
+        if (num == randomNumber) {
+            console.log("You Win 1corer");
+            break;
+        }
+        else if(num>randomNumber)
+        {
+            console.log("Guess lower");
+        }
+        else
+        console.log("Guess Higher");
+    }
+</script>
+
+</html>

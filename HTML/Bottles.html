@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <script>
+        let m = parseInt(prompt("Enter number of bottles"));
+        let n = m;
+        let q = 0;
+
+        while (n >= 6) {
+            let exchange = Math.floor(n / 6);
+            q += exchange;
+            n = exchange + (n % 6); // new bottles + leftover
+        }
+
+        m += q;
+        console.log("Total bottles including exchanges:" + m);
+    </script>
+</body>
+
+</html>

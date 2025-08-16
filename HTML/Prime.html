@@ -1,0 +1,39 @@
+<html>
+    <head> 
+        <script language="javascript">
+          function check()
+          {
+            var num=parseInt(form.T.value)
+            var count=0
+            
+            for(var i=1;i<=num;i++)
+            {
+                if(num%i==0)
+                {
+                    count++
+                }
+            }
+
+            if (count==2)
+            {
+                !alert("number is prime")   
+            }
+            else
+            {
+                !alert("number is not prime")
+            }
+          }
+        </script>
+    </head>
+
+    <body>
+        <center><h1>Enter a number and press enter</h1>
+        <form name="form">
+            <input type="text" name="T"><br><br>
+            <input type="button" value="Enter" onClick="check()">
+        </form> 
+        </center>
+    </body>
+</html>
+
+    

@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>
+        Even Or Odd
+    </title>
+    <script language="javascript">
+        function check()
+        {
+            var number=parseInt(form.T1.value)
+            if(number%2==0)
+            {
+              document.write("The number is even")
+            }
+            else
+            { 
+                document.write("The number is odd")
+            }
+        }
+     </script>
+</head>
+<body>
+    <center>
+        <form name="form">
+            Enter Any Number:
+            <input type="text" name="T1"><br><br>
+            <input type="button" value="SUBMIT" onclick="check"><br><br> 
+        </form>
+    </center>
+</body>
+</html>	

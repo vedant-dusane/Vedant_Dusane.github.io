@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Personal Data
+        </title>
+        <script language="javascript">
+            function Process()
+            {
+                var Name,Address,Standard
+                Name=form.T1.value
+                Address=form.T2.value
+                Standard=form.T3.value
+                !alert("Your Data Has Been Recorded")
+            }
+            function change()
+            {
+                location.href="file:///D:/JEE/IT/HTML/Personal%20Data%202.html";
+            }
+            </script>
+    </head>
+    <body>
+        <center>
+            <form name="form">
+                Enter your Name 
+                <input type="text" name="T1"><br><br>
+                Enter your Address
+                <input type="text" name="T2"><br><br>
+                Enter your Standard
+                <input type="number" name="T3"><br><br>
+                <input type="button" value="Submit" onClick="Process()"><br><br>
+                <input type="button" value="To Edit Your Data Click Here" onClick="change()"><br><br>
+            </form>
+        </center>
+    </body>
+</html>
+
